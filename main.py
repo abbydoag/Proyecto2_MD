@@ -18,6 +18,7 @@ def iniciar():
         if str == "1":
             a = 0
             b = 0 
+            #Ingresa el número entre los que se darán los números
             print("ingrese el rango de números para los primos (tienen que ser números positivos mayores iguales que 2)")
             a = int(input("a ----> :"))
             b = int(input("b ----> :"))
@@ -32,6 +33,7 @@ def iniciar():
             d = inverso_multiplicativo(e,phi)
             print(d)
             m = int(input("m ----> número que quiere codificar: "))
+            #se hace el calculo para que se de el mensaje códificado
             c =  m**e % n
             print(c)
             print("Tu número de entrada pública es" , e, "Tú número privado es", d, "tú clave para modulo es ", n, "el resultado de la códificación es" , c)
@@ -42,6 +44,7 @@ def iniciar():
             a = int(input("ingrese llave privada: "))
             b = int(input("ingrese el número N: "))
             c = int(input("ingrese el número codificado: "))
+            #se calcula el resultado 
             z = c**a % b
             print("El número original es", z)
             return
@@ -63,3 +66,5 @@ while True:
         break  # Sale del bucle y termina el programa
     else:
         print("Opción no válida. Por favor, elige 1 o 2.")
+        
+#Dados los principios por los que se basa, no se recomienda usar números pequeños bajo nungún prospecto 

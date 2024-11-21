@@ -1,7 +1,7 @@
 from math import gcd
 from re import I
 #gcd = mcd
-
+#multiplicación para calcular phi
 def calc_phi_n(p,q):
     return (p-1)*(q-1)
 

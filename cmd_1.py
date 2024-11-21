@@ -20,6 +20,7 @@ def generar_coprimo(n):
             return m  # Retorna m, que siempre será menor que n
 
 def maximo_comun_divisor_recursivo(a, b):
+    #Lo mismo que el primero pero simplemente con recursivo
     if b == 0:
         return a
     return maximo_comun_divisor_recursivo(b, a % b)
