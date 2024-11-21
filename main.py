@@ -25,10 +25,11 @@ def iniciar():
             print(a1)
             b2 = criba(a,b)
             print(b2)
-            n = calc_phi_n(a1,b2)
-            e = generar_coprimo(n)
+            n = a1 * b2
+            phi = calc_phi_n(a1,b2)
+            e = generar_coprimo(phi)
             print(e)
-            d = inverso_multiplicativo(e,n)
+            d = inverso_multiplicativo(e,phi)
             print(d)
             m = int(input("m ----> número que quiere codificar: "))
             c =  m**e % n

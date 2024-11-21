@@ -30,7 +30,7 @@ while (e < phi):
 # choosing d such that it satisfies
 # d*e = 1 + k * totient
 
-k = 2
+k = 41
 d = (1 + (k*phi))/e
 
 # Message to be encrypted
