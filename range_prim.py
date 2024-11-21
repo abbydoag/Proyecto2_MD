@@ -1,7 +1,6 @@
 
 import random
-
-
+#Sea crea un criba que genera números primos
 def criba(n,m):
     if n>m:
         print ("No valido")
@@ -18,6 +17,7 @@ def criba(n,m):
         for j in range(i*n, m, i):
             not_prime.add(j)
         primes.append(i)
+        #escoje un primo cualquiera de la lista
         a = random.choice(primes)
     return a
 
